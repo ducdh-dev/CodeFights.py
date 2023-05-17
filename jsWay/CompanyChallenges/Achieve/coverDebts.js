@@ -34,7 +34,7 @@ const sortDebts = (debts, interests) => {
     // const sortMergeDebts = mergeDebts.sort((a, b) => b[1] - a[1])
     // debts = sortMergeDebts.map(item => item[0])
     // interests = sortMergeDebts.map(item => item[1])
-    // TODO Note Cách để sort 2 array dựa vào sort 1 array
+    // TODO Note Way to sort 2 arrays depend on sorting 1 array
     const indices = Array.from(interests.keys())
     indices.sort((a, b) => interests[b] - interests[a])
 
