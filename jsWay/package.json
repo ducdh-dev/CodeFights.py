@@ -1,0 +1,6 @@
+{
+  "name": "js-interview-practice",
+  "dependencies": {
+    "prettier": "^2.8.8"
+  }
+}
