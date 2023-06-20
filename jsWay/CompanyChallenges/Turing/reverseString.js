@@ -3,17 +3,18 @@
  * and all letters reverse their positions
  */
 
-const solution = (str) => {
-    const letters = str.split('').filter(item => /[a-zA-Z]/.test(item))
-    const result = str.split('').map(item => {
-        if (/[a-zA-Z]/.test(item)) {
-            return letters.pop()
-        }
-        return item
-    })
+const solution = str => {
+  const letters = str.split('').filter(item => /[a-zA-Z]/.test(item))
+  const result = str.split('').map(item => {
+    // TODO test regex
+    if (/[a-zA-Z]/.test(item)) {
+      return letters.pop()
+    }
+    return item
+  })
 
-    return result.join('')
+  return result.join('')
 }
 
-console.log(solution("a-bC-dEf=ghlJ!!"))
+console.log(solution('a-bC-dEf=ghlJ!!'))
 // J-lh-gfE=dCba!!

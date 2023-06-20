@@ -13,6 +13,7 @@
 
 function solution(l, fares) {
   const cars = ['UberX', 'UberXL', 'UberPlus', 'UberBlack', 'UberSUV']
+  // TODO reduce with index
   const findIndex = fares.reduce((prevValue, currentValue, index) => (currentValue * l <= 20 ? index : prevValue), 0)
   return cars[findIndex]
 }
